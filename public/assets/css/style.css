@@ -1,0 +1,149 @@
+.loader_bg {
+    position: fixed;
+    z-index: 99;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    border: 1em solid #00aaff;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 0.8s linear infinite;
+    opacity: 0;
+}
+
+.loader:before {
+    animation-delay: 0.5s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.app-main {
+    background-color: #eef5f9;
+}
+
+.app-header,
+.scrollbar-sidebar {
+    background-color: #2e3047 !important;
+}
+
+.app-header__logo {
+    background-color: none;
+}
+
+.widget-heading,
+.widget-subheading,
+.widget-content,
+.widget-content-left,
+.widget-heading {
+    color: white;
+    opacity: 1;
+}
+
+.scrollbar-sidebar {
+    background-color: ;
+}
+
+li > a,
+.metismenu-icon {
+    color: white !important;
+}
+
+.is-invalid {
+    border-color: #64b5f6 !important;
+    box-shadow: 0 0 0 0.15rem rgba(100, 181, 246, 0.25) !important;
+    background-image: none !important;
+}
+
+th,
+td,
+.search-input,
+.pagination-info,
+.page-list {
+    color: #2e3047 !important;
+    font-size: 14px;
+}
+.table tr {
+    box-shadow: 0 3px px -1px rgba(0, 0, 0, 0.65);
+}
+
+/* .btn-primary, */
+.page-link,
+.dropdown-toggle {
+    /* background-color: #2e3047 !important; */
+    /* border-color: #2e3047 !important; */
+    font-size: 16px !important;
+    padding-bottom: 8px !important;
+}
+
+.btn {
+    font-size: 14px !important;
+}
+
+.filter-option {
+    font-size: 14px !important;
+    color: #2e3047 !important;
+}
+
+.progress {
+    height: 32px !important;
+    font-size: 14px !important;
+}
+.btn-primary:hover,
+.page-link:hover,
+.dropdown-toggle:hover {
+    /* background-color: #2e3047 !important; */
+    /* color: #3490dc !important; */
+}
+.text-primary {
+    color: #3490dc !important;
+}
+
+.text-primary:hover {
+    color: #45acff !important;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #64b5f6;
+}
