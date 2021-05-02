@@ -42,7 +42,7 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-md-8 col-lg-6 col-xl-5">
-                                        <div class="card overflow-hidden" style="margin-top: 35%;">
+                                        <div class="card overflow-hidden" style="margin-top: 10vh;">
                                             <div style="background-color: #2e3047">
                                                 <div class="row">
                                                     <div class="col-12">
@@ -74,7 +74,6 @@
 
                                                     <hr>
 
-                                                    <p>Demo login</p>
                                                     <p>Usuario: admin@charmed.dev</p>
                                                     <p>Contraseña: password</p>
                                                 </form>
