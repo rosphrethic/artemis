@@ -11,7 +11,7 @@
                             <h5 class="card-title">Detalles del Ticket #{{ $ticket->id }} del proyecto {{ $ticket->proyecto->nombre }}</h5>
                             <hr>
 
-                            @if (Auth::user()->rol_id == 1 || Auth::user()->rol_id == $ticket->asignado_a)
+                            @if (Auth::user()->rol_id == 1 || Auth::user()->user_id == $ticket->asignado_a)
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="row">
